@@ -26,3 +26,5 @@ Instead of relying on JFB's standard sanitization options, we created a custom P
 
 ### Step A: Add the PHP Function (To the Server)
 Copy and paste the following PHP code into the `functions.php` file of your child theme or using a code snippet plugin.
+
+https://github.com/WEBLOTI/JFB-E164-Phone-Cleaner/blob/0e068922c3d2bc5862ed87c17e1443cd7949e8c7/PHP%20code%20for%20Custom%20Transform
