@@ -1,0 +1,20 @@
+/**
+ * Phone number cleaner to single-digit format, ideal for Twilio.
+ * Allows the initial + sign and only numbers, removing hyphens, spaces, and parentheses.
+ */
+function jet_fb_sv_phone_clean( \JFB_Modules\Block_Parsers\Field_Data_Parser $parser ) {
+    $value = $parser->get_value();
+
+    // 1. Remove all non-numeric characters or the initial + sign.
+    // This regular expression allows “+” ONLY at the beginning, and digits in the rest.
+    $value = preg_replace( '/[^0-9\+]+/', '', $value );
+    
+    // 2. If the value is an empty string or does not meet the minimum length, discard it.
+    // (Optional: you can add a length validation here if necessary)
+    if ( empty( $value ) || strlen( $value ) < 7 ) {
+        $parser->set_value( '' );
+        return;
+    }
+
+    $parser->set_value( $value );
+}
