@@ -24,7 +24,7 @@ Instead of relying on JFB's standard sanitization options, we created a custom P
 <img width="1377" height="733" alt="Captura de pantalla 2025-12-15 a la(s) 7 50 50 p  m" src="https://github.com/user-attachments/assets/3f28e196-3bc6-4b6d-9c27-11b5f739ad47" />
 
 
-### Step A: Add the PHP Function (To the Server)
+### Add the PHP Function (To the Server)
 Copy and paste the following PHP code into the `functions.php` file of your child theme or using a code snippet plugin.
 
 https://github.com/WEBLOTI/JFB-E164-Phone-Cleaner/blob/0e068922c3d2bc5862ed87c17e1443cd7949e8c7/PHP%20code%20for%20Custom%20Transform
